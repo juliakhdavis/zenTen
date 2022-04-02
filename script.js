@@ -3,11 +3,11 @@ const imageEL = document.querySelector(".imageContainer")
 const quoteEL = document.querySelector(".quoteContainer")
 
 
-imageApi = 
+// imageApi = 'https://api.unsplash.com/photos/?client_id=R_iTdb6HaJJNCC32vNG2rbg9Am-stogGSupk5Xq9ZGs'
 
 quoteApi = "https://zenquotes.io/api/random"
 
-musicApi = 
+// musicApi = 
 
 
 
@@ -17,6 +17,8 @@ musicApi =
 // })
 // .then(function (imageData) {
 //   console.log(imageData)
+
+//   imageEL.textContent = 
 
 // });
 
