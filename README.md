@@ -1,3 +1,3 @@
 # zenTen
 
-I like javascript because it allows me to create interactive web applications.
+I enjoy JavaScript because it utilizes both Functional programming and Object-oriented programming.
