@@ -30,7 +30,6 @@ fetch(quoteApi)
 .then(function (quoteData) {
   console.log(quoteData)
 
-  console.log(quoteData.textsearch("happy"))
 
 });
 
