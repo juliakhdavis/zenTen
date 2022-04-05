@@ -5,9 +5,10 @@ const quoteEL = document.querySelector(".quoteContainer")
 
 // imageApi = 'https://api.unsplash.com/photos/?client_id=R_iTdb6HaJJNCC32vNG2rbg9Am-stogGSupk5Xq9ZGs'
 
-quoteApi = "https://zenquotes.io/api/random"
+quoteApi = "https://type.fit/api/quotes"
 
-// musicApi = 
+
+// https://type.fit/api/quotes free code camp returns 1600 quotes
 
 
 
@@ -28,6 +29,8 @@ fetch(quoteApi)
 })
 .then(function (quoteData) {
   console.log(quoteData)
+
+  console.log(quoteData.textsearch("happy"))
 
 });
 
