@@ -41,3 +41,17 @@ fetch(quoteApi)
 //   console.log(musicData)
 
 // });
+var unsplashAPIkey = "11Fvmpk3Ob6nJr35QbIqI-NsjOfdCAceNwpdSCNO0D0";
+var city = "city"
+
+console.log("test")
+function getPictures() {
+    console.log("pictures")
+    let queryURL = "https://api.unsplash.com/search/photos?page=5&per_page=10&query=" + city + "client_id=" + unsplashAPIkey;
+    fetch(queryURL)
+    .then (function(response){
+        return response.json()
+    }).then (function(data) {
+        console.log("data: ", data)
+    })
+}
