@@ -8,17 +8,87 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
 }
 
 .header {
-    font-size: 50px;
-    margin: 40px auto;
+    font-size: 90px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-family: 'Zen Antique Soft', serif;
+    /* text-decoration: underline; */
+}
+
+.mainHeaderText {
+    /* -webkit-text-stroke: 1px #a9c070; */
+    text-shadow: 3px 2px 5px 
+    #d2e4bb;
 }
 
 .description {
     margin-bottom: 50px ;
+    height: 200px;
 }
 
 .mainSection {
     margin-bottom: 60px;
+}
+
+.control input {
+    margin-bottom: 10px;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.control i {
+    margin-top: 10px;
+}
+
+/* start page */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.timerContainer {
+    border: 2px solid black;
+    width: 300px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.imageContainer {
+    border: 2px solid black;
+    width: 400px;
+    height: 300px;
+    margin-top: 20px;
+    text-align: center;
+}
+.quoteContainer {
+    border: 2px solid black;
+    width: 600px;
+    height: 100px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+
+/* font awesome  icons */
+
+div p a i {
+    margin-left: 10px;
+    margin-bottom: 7px;
 }
