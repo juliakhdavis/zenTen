@@ -7,8 +7,6 @@ const progress = document.querySelector('.progress')
 const progressContainer = document.querySelector('.progress-container')
 const title = document.querySelector('#title')
 const cover = document.querySelector('#cover')
-const currTime = currTime = document.querySelector('#currTime') //Come back to this
-const durTime = document.querySelector('#durTime') //Come back to this
 
 // Enter song titles here as strings in an array
 const songs = ['songs', 'go', 'here']
@@ -98,3 +96,46 @@ prevBtn.addEventListener('click', nextSong)
 audio.addEventListener('timeupdate', updateProgress)
 
 progressContainer.addEventListener('click', setProgress)
+const musicEL = document.querySelector(".musicContainer")
+const imageEL = document.querySelector(".imageContainer")
+const quoteEL = document.querySelector(".quoteContainer")
+
+
+// imageApi = 'https://api.unsplash.com/photos/?client_id=R_iTdb6HaJJNCC32vNG2rbg9Am-stogGSupk5Xq9ZGs'
+
+quoteApi = "https://type.fit/api/quotes"
+
+
+// https://type.fit/api/quotes free code camp returns 1600 quotes
+
+
+
+// fetch(imageApi)
+// .then(function (response) {
+//   return response.json();
+// })
+// .then(function (imageData) {
+//   console.log(imageData)
+
+//   imageEL.textContent = 
+
+// });
+
+fetch(quoteApi)
+.then(function (response) {
+  return response.json();
+})
+.then(function (quoteData) {
+  console.log(quoteData)
+
+
+});
+
+// fetch(musicApi)
+// .then(function (response) {
+//   return response.json();
+// })
+// .then(function (musicData) {
+//   console.log(musicData)
+
+// });
