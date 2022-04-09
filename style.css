@@ -2,6 +2,7 @@ html, body {
     border: 0;
     margin: 0;
     box-sizing: border-box;
+    background-image: linear-gradient (#2c6975 #68b2a0 #cde0c9 #E0ECDE #ffff)
 }
 
 body {
@@ -30,6 +31,8 @@ body {
 .description {
     margin-bottom: 50px ;
     height: 200px;
+    font-size: 32px; 
+
 }
 
 .mainSection {
@@ -44,6 +47,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 15px;
 }
 
 .control i {
@@ -52,11 +56,26 @@ body {
 
 /* start page */
 
+
+#headstart {
+width: 100;
+margin: 0;
+margin: 0;
+
+
+}
+
+#headstart.p {
+position: absolute;
+top: 0px;
+right: 0px;
+font-size: 15px;
+}
+
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .timerContainer {
@@ -69,19 +88,27 @@ body {
 }
 
 .imageContainer {
-    border: 2px solid black;
-    width: 400px;
-    height: 300px;
-    margin-top: 20px;
-    text-align: center;
+    min-height: 100vh;
+    min-width: 100vh;
+    display: grid;
+    place-items: center;
+    padding-top:  60px;
+    padding-bottom: 60;
+    background:blue;
+    background-size: cover;
+    background-position: cover;
+    background-position: center;
 }
 .quoteContainer {
-    border: 2px solid black;
     width: 600px;
     height: 100px;
     margin-top: 20px;
     text-align: center;
+    font-family: 'Zen Maru Gothic', sans-serif;
+
 }
+
+
 
 
 
