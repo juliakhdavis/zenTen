@@ -98,7 +98,7 @@ div p a i {
 .music-container {
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0 20px 20px 0 rgba(252, 169, 160, 0.6); 
+    box-shadow: 0 20px 20px 0 rgba(174, 252, 160, 0.6); 
     display: flex;
     padding: 50px 208px;
     position: relative;
@@ -181,3 +181,4 @@ div p a i {
     width: 0%;
     transition: width 0.1s linear;
 }
+
