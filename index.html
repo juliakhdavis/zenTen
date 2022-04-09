@@ -10,62 +10,33 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
     <script src="https://kit.fontawesome.com/24eb628edf.js" crossorigin="anonymous"></script>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&family=Zen+Maru+Gothic:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
     <link href="style.css" rel="stylesheet" />
-    
-    
+  
+  
   </head>
-  <body>
-      <header class="header">
+
+  <body id="main-page"> 
+    <header class="header">
           <h1 class="mainHeaderText">Zen Ten</h1>
       </header>
+  
       <section class="mainSection">
           <p class="description">welcome, project usage description</p>
           <h3 class="timeSelection">How long would you like to zen for?</h3>
           <div class="control">
-            <input id="timeInput" class="input is-hovered" type="number" placeholder="Time in Minutes"><i class="fa-solid fa-hourglass fa-2xl"></i>
+            <input class="input is-hovered" type="text" placeholder="Time in Minutes"><i class="fa-solid fa-hourglass fa-2xl"></i>
           </div>
-      </section>
-
-      <!-- music player -->
-      <section>
-          <div class="music-container" id="music-container">
-              <div class="music-info">
-                  <h4 id="title">Music</h4>
-                  <div class="progress-container" id="progress-container">
-                      <div class="progress" id="progress"></div>
-                  </div>
-              </div>
-          </div>
-
-        <audio src="" id="music-cover" id="cover"></audio>
-
-        <div class="navigation">
-            <img src="" alt="music-cover" id="cover">
-        </div>
-        <div class="navigation">
-            <button id="prev" class="action-btn">
-                <i class="fa-solid fa-backward"></i>
-            </button>
-            <button id="play" class="action-btn">
-                <i class="fa-solid fa-play"></i>
-            </button>
-            <button id="next" class="action-btn">
-                <i class="fa-solid fa-forward"></i>
-            </button>
-        </div>
-          
       </section>
       
     <!-- bulma buttons -->
     <div class="field is-grouped is-grouped-multiline buttons are-medium">
       <p class="control">
-        <a class="button is-primary is-outlined"> Stars <i class="fa-solid fa-star"></i></a>
+        <a class="button is-primary is-outlined""> Stars <i class="fa-solid fa-star"></i></a>
       </p>
       <p class="control">
         <a class="button is-link is-outlined"> Ocean <i class="fa-solid fa-water"></i> </a>
@@ -81,9 +52,13 @@
       </p>
     </div>
     <div class="startBtnContainer buttons are-large">
-        <button id="startBtn" class="button is-info is-outlined">Start</button>
+        <button class="button is-info is-outlined">Start</button>
     </div>
+
     <!-- linked script -->
+    
+  
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
