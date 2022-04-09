@@ -19,8 +19,6 @@ const songs = ['songs', 'go', 'here']
 
 function redirect () {
     
-  
-  window.location.href = "file:///Users/isaacluton/Documents/BootCamp/homework/zenTen/start.html"
 
   let timeInputVal = document.getElementById("timeInput").value
 
