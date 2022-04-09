@@ -1,0 +1,121 @@
+html, body {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient (#2c6975 #68b2a0 #cde0c9 #E0ECDE #ffff)
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.header {
+    font-size: 90px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-family: 'Zen Antique Soft', serif;
+    /* text-decoration: underline; */
+}
+
+.mainHeaderText {
+    /* -webkit-text-stroke: 1px #a9c070; */
+    text-shadow: 3px 2px 5px 
+    #d2e4bb;
+}
+
+.description {
+    margin-bottom: 50px ;
+    height: 200px;
+    font-size: 32px; 
+
+}
+
+.mainSection {
+    margin-bottom: 60px;
+}
+
+.control input {
+    margin-bottom: 10px;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.control i {
+    margin-top: 10px;
+}
+
+/* start page */
+
+
+#headstart {
+width: 100;
+margin: 0;
+margin: 0;
+
+
+}
+
+#headstart.p {
+position: absolute;
+top: 0px;
+right: 0px;
+font-size: 15px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timerContainer {
+    border: 2px solid black;
+    width: 300px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.imageContainer {
+    min-height: 100vh;
+    min-width: 100vh;
+    display: grid;
+    place-items: center;
+    padding-top:  60px;
+    padding-bottom: 60;
+    background:blue;
+    background-size: cover;
+    background-position: cover;
+    background-position: center;
+}
+.quoteContainer {
+    width: 600px;
+    height: 100px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Zen Maru Gothic', sans-serif;
+
+}
+
+
+
+
+
+
+/* font awesome  icons */
+
+div p a i {
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
