@@ -62,15 +62,15 @@ function nextSong() {
 // update song details 
 function loadSong(song) {
     title.innerText = song
-    audio.src = 'music/${song}.mp3' //COME BACK AND CHECK SYNTAX LATER
-    cover.src = 'images/${song}.jpg'
+    audio.src = `music/${song}.mp3` //COME BACK AND CHECK SYNTAX LATER
+    cover.src = `images/${song}.jpg`
 }
 
 function updateProgress(e) {
     // console.log(e.srcElement.duration)
     const {duration, currentTime} = e.srcElement
     const progressPercent = (currentTime / duration) * 100
-    progress.getElementsByClassName.width = '${progressPercent}%' //COME BACK TO THIS
+    progress.getElementsByClassName.width = `${progressPercent}%` //COME BACK TO THIS
 }
 
 function setProgress(e) {
