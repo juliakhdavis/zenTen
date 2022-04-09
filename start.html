@@ -5,13 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/24eb628edf.js" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <main class="main">
-        <div class="timerContainer">
-            <p id="time">Music</p>
-        </div>
+
+        <!-- music container -->
+        <section>
+            <div class="music-container" id="music-container">
+                <div class="music-info">
+                    <h4 id="title">Music</h4>
+                    <div class="progress-container" id="progress-container">
+                        <div class="progress" id="progress"></div>
+                    </div>
+                </div>
+            </div>
+  
+          <audio src="" id="music-cover" id="cover"></audio>
+  
+          <div class="navigation">
+              <img src="" alt="music-cover" id="cover">
+          </div>
+          <div class="navigation">
+              <button id="prev" class="action-btn">
+                  <i class="fa-solid fa-backward"></i>
+              </button>
+              <button id="play" class="action-btn">
+                  <i class="fa-solid fa-play"></i>
+              </button>
+              <button id="next" class="action-btn">
+                  <i class="fa-solid fa-forward"></i>
+              </button>
+          </div>
+            
+        </section>
         <div class="imageContainer">
             <p>image</p>
         </div>
