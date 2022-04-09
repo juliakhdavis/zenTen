@@ -1,3 +1,5 @@
+const startBtn = document.querySelector("#startBtn")
+const timeInputVal = document.getElementById("timeInput").value
 const musicContainer = document.querySelector('.music-container')
 const playBtn = document.querySelector('#play')
 const prevBtn = document.querySelector('#prev')
@@ -13,6 +15,25 @@ const durTime = document.querySelector('#durTime') //Come back to this
 // Enter song titles here as strings in an array
 const songs = ['songs', 'go', 'here']
 
+
+
+function redirect () {
+    
+  
+  window.location.href = "file:///Users/isaacluton/Documents/BootCamp/homework/zenTen/start.html"
+
+  let timeInputVal = document.getElementById("timeInput").value
+
+  localStorage.setItem("timeInput", timeInputVal)
+}
+
+function startBtnListener () {
+
+  startBtn.addEventListener("click", redirect);
+
+}
+
+startBtnListener ();
 // Keeps track of songs. index is two because we start count at zero
 let songIndex = 2
 
