@@ -23,7 +23,7 @@ fetch(quoteApi)
 
     quoteEL.textContent = quoteText + "    -" +quoteAuthor;
 
-    setInterval(function(){
+    let addQuote = setInterval(function(){
     let getQuoteNumber = Math.floor(Math.random() * 1642);
 
     let quoteText = quoteData[getQuoteNumber].text;
@@ -32,9 +32,7 @@ fetch(quoteApi)
 
     quoteEL.textContent = quoteText + "    -" +quoteAuthor;
 
-    if (quoteEL.textContent === "Thank You") {
-    }
-  }, 5000)
+  }, 10000)
 });
 
 
@@ -42,14 +40,13 @@ let savedTimeInput = localStorage.getItem("timeInput");
 
 parseInt(savedTimeInput);
 
-savedTimeInput = savedTimeInput * 1 ; 
+savedTimeInput = savedTimeInput * 5 ; 
 
 setInterval(function(){
     savedTimeInput = savedTimeInput -1;
     if (savedTimeInput === 0) {
-        console.log("game over")
-        }
-    
+        quoteConEL.remove();
 
+        }
 }, 1000);
 
