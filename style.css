@@ -3,6 +3,7 @@ html, body {
     margin: 0;
     box-sizing: border-box;
     background-color: black;
+    /* background-image: linear-gradient (#2c6975 #68b2a0 #cde0c9 #E0ECDE #ffff) */
 }
 
 body {
@@ -31,6 +32,8 @@ body {
 .description {
     margin-bottom: 50px ;
     height: 200px;
+    font-size: 32px; 
+
 }
 
 .mainSection {
@@ -47,6 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 15px;
 }
 
 .control i {
@@ -55,11 +59,26 @@ body {
 
 /* start page */
 
+
+#headstart {
+width: 100;
+margin: 0;
+margin: 0;
+
+
+}
+
+#headstart.p {
+position: absolute;
+top: 0px;
+right: 0px;
+font-size: 15px;
+}
+
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 
@@ -70,8 +89,8 @@ body {
     margin-top: 20px;
     text-align: center;
 }
+
 .quoteContainer {
-    
     width: 600px;
     height: 150px;
     margin-top: 20px;
@@ -94,11 +113,6 @@ div p a:hover{
 }
 /* font awesome  icons */
 
-div p a i {
-    margin-left: 10px;
-    margin-bottom: 7px;
-}
-
 .quote {
     color: white;
     font-size: 25px;
@@ -118,6 +132,7 @@ div p a i {
     position: relative;
     margin: 5rem 0;
     z-index: 10;
+    flex-direction: column;
 }
 
 .img-container {
@@ -180,7 +195,7 @@ div p a i {
 }
 
 .progress-container {
-    background: #fff;
+    background: rgb(76, 115, 68);
     border-radius: 5px;
     cursor: pointer;
     margin: 10px 0;
@@ -196,3 +211,14 @@ div p a i {
     transition: width 0.1s linear;
 }
 
+
+
+
+
+
+/* font awesome  icons */
+
+div p a i {
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
