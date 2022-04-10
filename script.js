@@ -21,6 +21,8 @@ const startBtn = document.querySelector("#startBtn")
 // Enter song titles here as strings in an array
 // const songs = ['songs', 'go', 'here']
 
+
+
 paramOcean.addEventListener("click", function() {
 
     if (!paramOcean.classList.contains("clicked")) {
@@ -28,6 +30,7 @@ paramOcean.addEventListener("click", function() {
     } else {
         paramOcean.classList.remove("clicked")
     }
+    localStorage.setItem("param","nature")
 })
 paramStars.addEventListener("click", function() {
 
@@ -36,6 +39,7 @@ paramStars.addEventListener("click", function() {
     } else {
         paramStars.classList.remove("clicked")
     }
+    localStorage.setItem("param","stars")
 })
 paramNature.addEventListener("click", function() {
 
@@ -44,6 +48,7 @@ paramNature.addEventListener("click", function() {
     } else {
         paramNature.classList.remove("clicked")
     }
+    localStorage.setItem("param","nature")
 })
 paramSun.addEventListener("click", function() {
 
@@ -52,6 +57,7 @@ paramSun.addEventListener("click", function() {
     } else {
         paramSun.classList.remove("clicked")
     }
+    localStorage.setItem("param","sunlight")
 })
 paramCity.addEventListener("click", function() {
 
@@ -60,6 +66,7 @@ paramCity.addEventListener("click", function() {
     } else {
         paramCity.classList.remove("clicked")
     }
+    localStorage.setItem("param","city")
 })
 
 startBtn.addEventListener("click", function () {
