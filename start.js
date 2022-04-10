@@ -64,6 +64,7 @@ setInterval(function(){
         imageConEL.remove();
         let restart = document.createElement("h1")
         restart.textContent = "Thank You! Click to return to homepage!";
+        restart.classList.add("quote")
         mainEl.appendChild(restart)
         restart.addEventListener("click", function () {
           location.href = "index.html"
