@@ -1,5 +1,5 @@
 const musicEL = document.querySelector(".musicContainer")
-const imageEL = document.querySelector(".imageContainer")
+const imageEL = document.querySelector(".image")
 const quoteEL = document.querySelector(".quoteContainer")
 
 
@@ -10,28 +10,41 @@ quoteApi = "https://type.fit/api/quotes"
 
 // https://type.fit/api/quotes free code camp returns 1600 quotes
 
+var unsplashAPI = "11Fvmpk3Ob6nJr35QbIqI-NsjOfdCAceNwpdSCNO0D0"
+// var userInput = localStorage.getItem("param")
+var userInput = "city"
 
+function getPictures(){
+  console.log("test")
+  let pictureURL = "https://api.unsplash.com/search/photos?per_page=30&query=" + userInput + "&client_id=" + unsplashAPI;
+  fetch(pictureURL)
+  .then(function(response){
+    return response.json()
+  }).then(function(data){
+    console.log("data: ", data)
+   
+    let getPictureNumber = Math.floor(Math.random() * 29);
+    imageEL.src = data.results[getPictureNumber].urls.small
+         
+      setInterval(function(){
+        let getPictureNumber = Math.floor(Math.random() * 29);
+        imageEL.src = data.results[getPictureNumber].urls.small
+    }, 10000)
+  })
+ 
+}
 
-// fetch(imageApi)
+getPictures()
+
+// fetch(quoteApi)
 // .then(function (response) {
 //   return response.json();
 // })
-// .then(function (imageData) {
-//   console.log(imageData)
+// .then(function (quoteData) {
+//   console.log(quoteData)
 
-//   imageEL.textContent = 
 
 // });
-
-fetch(quoteApi)
-.then(function (response) {
-  return response.json();
-})
-.then(function (quoteData) {
-  console.log(quoteData)
-
-
-});
 
 // fetch(musicApi)
 // .then(function (response) {
