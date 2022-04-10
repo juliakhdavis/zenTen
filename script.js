@@ -1,7 +1,12 @@
-const musicEL = document.querySelector(".musicContainer")
-const imageEL = document.querySelector(".image")
-const quoteEL = document.querySelector(".quoteContainer")
-// const musicContainer = document.querySelector('.music-container')
+
+const timeError = document.getElementById("timeError")
+const musicContainer = document.querySelector('.music-container')
+const paramStars = document.getElementById("paramStars")
+const paramOcean = document.getElementById("paramOcean")
+const paramNature = document.getElementById("paramNature")
+const paramSun = document.getElementById("paramSun")
+const paramCity = document.getElementById("paramCity")
+const startBtn = document.querySelector("#startBtn")
 // const playBtn = document.querySelector('#play')
 // const prevBtn = document.querySelector('#prev')
 // const nextBtn = document.querySelector('#next')
@@ -10,11 +15,72 @@ const quoteEL = document.querySelector(".quoteContainer")
 // const progressContainer = document.querySelector('.progress-container')
 // const title = document.querySelector('#title')
 // const cover = document.querySelector('#cover')
+// const currTime = currTime = document.querySelector('#currTime') //Come back to this
+// const durTime = document.querySelector('#durTime') //Come back to this
 
-// // Enter song titles here as strings in an array
+// Enter song titles here as strings in an array
 // const songs = ['songs', 'go', 'here']
 
-// // Keeps track of songs. index is two because we start count at zero
+paramOcean.addEventListener("click", function() {
+
+    if (!paramOcean.classList.contains("clicked")) {
+        paramOcean.classList.add("clicked")
+    } else {
+        paramOcean.classList.remove("clicked")
+    }
+})
+paramStars.addEventListener("click", function() {
+
+    if (!paramStars.classList.contains("clicked")) {
+        paramStars.classList.add("clicked")
+    } else {
+        paramStars.classList.remove("clicked")
+    }
+})
+paramNature.addEventListener("click", function() {
+
+    if (!paramNature.classList.contains("clicked")) {
+        paramNature.classList.add("clicked")
+    } else {
+        paramNature.classList.remove("clicked")
+    }
+})
+paramSun.addEventListener("click", function() {
+
+    if (!paramSun.classList.contains("clicked")) {
+        paramSun.classList.add("clicked")
+    } else {
+        paramSun.classList.remove("clicked")
+    }
+})
+paramCity.addEventListener("click", function() {
+
+    if (!paramCity.classList.contains("clicked")) {
+        paramCity.classList.add("clicked")
+    } else {
+        paramCity.classList.remove("clicked")
+    }
+})
+
+startBtn.addEventListener("click", function () {
+    
+    let timeInputVal = document.getElementById("timeInput").value
+
+    if (timeInputVal < 0 || timeInputVal > 10) {
+        let newEl = document.createElement("p")
+        newEl.textContent = ("Please enter # 1-10")
+        newEl.classList.add("red")
+        timeError.appendChild(newEl)
+        console.log(newEl)
+    } else {
+
+        location.href = "start.html"
+        localStorage.setItem("timeInput", timeInputVal)
+    
+}})
+
+
+// Keeps track of songs. index is two because we start count at zero
 // let songIndex = 2
 
 // // load songs into DOM
