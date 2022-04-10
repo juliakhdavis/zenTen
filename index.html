@@ -25,33 +25,34 @@
       </header>
       <section class="mainSection">
           <p class="description">welcome, project usage description</p>
-          <h3 class="timeSelection">How long would you like to zen for?</h3>
+          <h3 id="timeError" class="timeSelection">How long would you like to zen for?</h3>
           <div class="control">
-            <input id="timeInput" class="input is-hovered" type="text" placeholder="Time in Minutes"><i class="fa-solid fa-hourglass fa-2xl"></i>
+            <input id="timeInput" class="input is-hovered" type="number" max="10" min="0" placeholder="Time in Minutes (1-10)"><i class="fa-solid fa-hourglass fa-2xl"></i>
           </div>
       </section>
       
     <!-- bulma buttons -->
     <div class="field is-grouped is-grouped-multiline buttons are-medium">
       <p class="control">
-        <a class="button is-primary is-outlined""> Stars <i class="fa-solid fa-star"></i></a>
+        <a class="button is-primary is-active" id="paramStars"> Stars <i class="fa-solid fa-star"></i></a>
       </p>
       <p class="control">
-        <a class="button is-link is-outlined"> Ocean <i class="fa-solid fa-water"></i> </a>
+        <a class="button is-link is-active" id="paramOcean"> Ocean <i class="fa-solid fa-water"></i> </a>
       </p>
       <p class="control">
-        <a class="button is-success is-outlined"> Nature <i class="fa-solid fa-leaf"></i> </a>
+        <a class="button is-success is-active" id="paramNature"> Nature <i class="fa-solid fa-leaf"></i> </a>
       </p>
       <p class="control">
-        <a class="button is-warning is-outlined"> Sunlight <i class="fa-solid fa-sun"></i> </a>
+        <a class="button is-warning is-active" id="paramSun"> Sunlight <i class="fa-solid fa-sun"></i> </a>
       </p>
       <p class="control">
-        <a class="button is-dark is-outlined"> City <i class="fa-solid fa-city"></i></a>
+        <a class="button is-dark is-active" id="paramCity"> City <i class="fa-solid fa-city"></i></a>
       </p>
     </div>
     <div class="startBtnContainer buttons are-large">
-        <a href="start.html" <button class="button is-info is-outlined">Start</button></a>
+         <button class="button is-info is-active" id="startBtn">Start</button>
     </div>
+    
     <!-- linked script -->
     <script src="script.js"></script>
   </body>
