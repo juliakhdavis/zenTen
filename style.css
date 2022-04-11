@@ -249,3 +249,82 @@ div p a i {
     margin-left: 10px;
     margin-bottom: 7px;
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    body, section, div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainHeaderText {
+        /* -webkit-text-stroke: 1px #a9c070; */
+        text-align: center;
+    }
+
+    div p a:hover{
+        transform: scale(1.0);
+        border: 1px solid white;
+    }
+
+    .clicked {
+        /* transform: scale(1.2); */
+        margin: 0px;
+        text-decoration: underline;
+        
+
+     }
+
+     .control {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+    }
+
+    div p a {
+        width: 145px;
+        height: 50px;
+    }
+
+    .quoteContainer {
+        width: 350px;
+    }
+        
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+    
+    body, section, div {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    div p a:hover{
+        transform: scale(1.0);
+        border: 1px solid white;
+    }
+
+    .clicked {
+        /* transform: scale(1.2); */
+        text-decoration: underline;
+        margin: 0px;
+
+     }
+     .control {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+    }
+    div p a {
+        width: 145px;
+        height: 50px;
+    }
+
+    .quoteContainer {
+        width: 350px;
+    }
+}
