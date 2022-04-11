@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
-    <script src="https://kit.fontawesome.com/24eb628edf.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/24eb628edf.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&family=Zen+Maru+Gothic:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&family=Zen+Maru+Gothic:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
 
-<body id="start">
-
-    <header id="headstart">
-    <p> ZenTen </p>
-</header>
+  <body id="start">
+    <header id="headstart"></header>
 
     <main class="main">
-        <div class="timerContainer">
-            <p>timer</p>
-        </div>
-        <div>
-            <img src="" class="image">
+      <section>
+        <div class="music-container" id="music-container">
+          <div class="music-info">
+            <h6 id="title">Press Play To Start Music</h6>
+            <div class="progress-container" id="progress-container">
+              <div class="progress" id="progress"></div>
+            </div>
+          </div>
+          <audio controls>
+            <source
+              src="./assets/music/lofiOne.mp3#t=00:03:26"
+              type="audio/mpeg"
+              id="music-cover"
+              id="cover"
+            />
+          </audio>
 
-        <section>
-            <div class="music-container" id="music-container">
-                <div class="music-info">
-                    <h6 id="title">Press Play To Start</h6>
-                    <h6>3 minutes of quiet zen followed by calming music</h6>
-                    <div class="progress-container" id="progress-container">
-                        <div class="progress" id="progress"></div>
-                    </div>
-                </div>
-                <audio controls>
-                    <source src="./assets/music/lofiOne.mp3" type="audio/mpeg" id="music-cover" id="cover">
-                </audio>
-  
-                <!-- <div class="navigation">
+          <!-- <div class="navigation">
                     <img src="" alt="music-cover" id="cover">
                 </div>
                 <div class="navigation">
@@ -59,23 +60,19 @@
                     </button>
                 </div>
             </div> -->
-
-            
-        </section>
-
-        <div class="imageContainer">
-            <p> image container </p>
         </div>
+      </section>
 
-        <div class="quoteContainer">
-            <p class="quote"></p>
-            <p class="author"></p>
-        </div>
-        
+      <div class="imageContainer">
+        <img src="" class="image" />
+      </div>
+
+      <div class="quoteContainer">
+        <p class="quote"></p>
+        <p class="author"></p>
+      </div>
     </main>
-    
 
- <script src="start.js"></script>
-
-</body>
+    <script src="start.js"></script>
+  </body>
 </html>

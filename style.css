@@ -15,47 +15,80 @@ body {
 }
 
 .header {
-    font-size: 100px;
-    margin-top: 30px;
-    margin-bottom: 70px;
-    font-family: 'Zen Antique Soft', serif;
+    font-size: 120px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: 'Zen Maru Gothic', sans-serif;
     /* text-decoration: underline; */
 }
 
 .mainHeaderText {
     /* -webkit-text-stroke: 1px #a9c070; */
-    text-shadow: 3px 2px 5px 
-    #d2e4bb;
+    color: lightgray;
+    text-shadow: 3px 5px 5px #206ca0;
+    ;
 }
 
 .description {
     margin-bottom: 50px ;
-    height: 200px;
-    font-size: 32px; 
+    height: auto;
+    width: 50%;
+    font-size: 22px; 
+    text-align: center;
 
 }
 
 .mainSection {
-    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
     color: white;
 
 }
 
 .control input {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .control {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 15px;
+    margin: 5px;
 }
 
 .control i {
     margin-top: 10px;
 }
 
+.quote {
+    color: #fff;
+    font-size: 24px;
+}
+.author {
+    color: white;
+    font-size: 20px;
+}
+.timeSelection {
+    text-align: center;
+    font-size: 26px;
+}
+
+#timeInput {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.pick {
+    margin-top: 50px;
+    font-size: 26px;
+
+}
+
+#startBtn {
+    margin-top: 45px;
+}
 /* start page */
 
 
@@ -82,21 +115,18 @@ font-size: 15px;
 
 
 .imageContainer {
-    min-height: 100vh;
-    min-width: 100vh;
+    min-height: auto;
+    min-width: auto;
     display: grid;
     place-items: center;
-    padding-top:  60px;
+    padding-top:  5px;
     padding-bottom: 60;
-    background:blue;
-    background-size: cover;
-    background-position: cover;
-    background-position: center;
+    
 }
 .quoteContainer {
     width: 600px;
     height: 150px;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
 }
@@ -108,6 +138,7 @@ font-size: 15px;
 .red {
     color: red;
     font-size: 25px;
+    text-align: center;
 }
 
 div p a:hover{
@@ -122,9 +153,9 @@ div p a:hover{
     border-radius: 15px;
     box-shadow: 0 20px 20px 0 rgba(174, 252, 160, 0.6); 
     display: flex;
-    padding: 50px 208px;
+    padding: 5px 5px;
     position: relative;
-    margin: 5rem 0;
+    margin: 1rem 0;
     z-index: 10;
     flex-direction: column;
 }
@@ -205,7 +236,9 @@ div p a:hover{
     transition: width 0.1s linear;
 }
 
-
+#title {
+    text-align: center;
+}
 
 
 

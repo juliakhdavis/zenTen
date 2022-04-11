@@ -7,6 +7,8 @@ const paramNature = document.getElementById("paramNature")
 const paramSun = document.getElementById("paramSun")
 const paramCity = document.getElementById("paramCity")
 const startBtn = document.querySelector("#startBtn")
+const timeInput = document.getElementById("timeInput")
+
 // const playBtn = document.querySelector('#play')
 // const prevBtn = document.querySelector('#prev')
 // const nextBtn = document.querySelector('#next')
@@ -30,7 +32,7 @@ paramOcean.addEventListener("click", function() {
     } else {
         paramOcean.classList.remove("clicked")
     }
-    localStorage.setItem("param","nature")
+    localStorage.setItem("param","ocean")
 })
 paramStars.addEventListener("click", function() {
 
@@ -86,7 +88,31 @@ startBtn.addEventListener("click", function () {
     
 }})
 
+// save time input 
 
+let savedTimeInput = localStorage.getItem("timeInput");
+
+timeInput.value = savedTimeInput
+
+// saved parameter
+
+let savedParam = localStorage.getItem("param")
+
+if (savedParam === "sunlight"){
+    paramSun.classList.add("clicked")
+}
+if (savedParam === "nature"){
+    paramNature.classList.add("clicked")
+}
+if (savedParam === "ocean"){
+    paramOcean.classList.add("clicked")
+}
+if (savedParam === "city"){
+    paramCity.classList.add("clicked")
+}
+if (savedParam ==="stars"){
+    paramStars.classList.add("clicked")
+}
 // Keeps track of songs. index is two because we start count at zero
 // let songIndex = 2
 
@@ -170,61 +196,3 @@ startBtn.addEventListener("click", function () {
 // prevBtn.addEventListener('click', nextSong)
 
 // audio.addEventListener('timeupdate', updateProgress)
-
-// progressContainer.addEventListener('click', setProgress)
-// const musicEL = document.querySelector(".musicContainer")
-// const imageEL = document.querySelector(".imageContainer")
-// const quoteEL = document.querySelector(".quoteContainer")
-
-
-// imageApi = 'https://api.unsplash.com/photos/?client_id=R_iTdb6HaJJNCC32vNG2rbg9Am-stogGSupk5Xq9ZGs'
-
-quoteApi = "https://type.fit/api/quotes"
-
-
-// https://type.fit/api/quotes free code camp returns 1600 quotes
-
-var unsplashAPI = "11Fvmpk3Ob6nJr35QbIqI-NsjOfdCAceNwpdSCNO0D0"
-// var userInput = localStorage.getItem("param")
-var userInput = "city"
-
-function getPictures(){
-  console.log("test")
-  let pictureURL = "https://api.unsplash.com/search/photos?per_page=30&query=" + userInput + "&client_id=" + unsplashAPI;
-  fetch(pictureURL)
-  .then(function(response){
-    return response.json()
-  }).then(function(data){
-    console.log("data: ", data)
-   
-    let getPictureNumber = Math.floor(Math.random() * 29);
-    imageEL.src = data.results[getPictureNumber].urls.small
-         
-      setInterval(function(){
-        let getPictureNumber = Math.floor(Math.random() * 29);
-        imageEL.src = data.results[getPictureNumber].urls.small
-    }, 10000)
-  })
- 
-}
-
-getPictures()
-
-// fetch(quoteApi)
-// .then(function (response) {
-//   return response.json();
-// })
-// .then(function (quoteData) {
-//   console.log(quoteData)
-
-
-// });
-
-// fetch(musicApi)
-// .then(function (response) {
-//   return response.json();
-// })
-// .then(function (musicData) {
-//   console.log(musicData)
-
-// });

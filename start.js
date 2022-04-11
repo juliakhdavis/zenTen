@@ -1,5 +1,6 @@
 const musicConEL = document.querySelector(".musicContainer")
 const imageConEL = document.querySelector(".imageContainer")
+const imageEL = document.querySelector(".image")
 const quoteConEL = document.querySelector(".quoteContainer")
 const quoteEL = document.querySelector(".quote");
 const authorEL = document.querySelector(".author");
@@ -7,7 +8,7 @@ const timeEl = document.getElementById("time")
 const mainEl = document.querySelector(".main")
 
 
-
+// quote api and interval
 quoteApi = "https://type.fit/api/quotes"
 
 fetch(quoteApi)
@@ -50,6 +51,36 @@ fetch(quoteApi)
   }, 10000)
 });
 
+// image api and interval
+
+var unsplashAPI = "11Fvmpk3Ob6nJr35QbIqI-NsjOfdCAceNwpdSCNO0D0"
+var userInput = localStorage.getItem("param")
+// var userInput = "city"
+
+function getPictures(){
+  console.log("test")
+  let pictureURL = "https://api.unsplash.com/search/photos?per_page=30&query=" + userInput + "&client_id=" + unsplashAPI;
+  fetch(pictureURL)
+  .then(function(response){
+    return response.json()
+  }).then(function(data){
+    console.log("data: ", data)
+   
+    console.log(data)
+    let getPictureNumber = Math.floor(Math.random() * 29);
+    imageEL.src = data.results[getPictureNumber].urls.small
+         
+      setInterval(function(){
+        let getPictureNumber = Math.floor(Math.random() * 29);
+        imageEL.src = data.results[getPictureNumber].urls.small
+    }, 10000)
+  })
+ 
+}
+
+getPictures()
+
+// background timer
 
 let savedTimeInput = localStorage.getItem("timeInput");
 
