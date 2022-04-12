@@ -27,12 +27,12 @@ Here at Zenten we want to make sure you don’t go crazy. It will only take thre
 - Be able to save quotes and image combos to local device
 - Be able to share saved quote and image combos to social media platforms
 
-##Desktop
+## Desktop
 
 ![Alt text](/Screen%20Shot%202022-04-11%20at%206.31.27%20PM.png "Homepage")
 ![Alt text](/Screen%20Shot%202022-04-11%20at%206.34.28%20PM.png "Zenspot")
 
-##Mobile
+## Mobile
 
 ![caption](https://media.giphy.com/media/WWNkwL24qJWBeKm5aV/giphy.gif)
 
