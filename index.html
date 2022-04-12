@@ -9,56 +9,84 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
-    <script src="https://kit.fontawesome.com/24eb628edf.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/24eb628edf.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&family=Zen+Maru+Gothic:wght@300;400;500&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&family=Zen+Maru+Gothic:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
     <link href="style.css" rel="stylesheet" />
-  
-  
   </head>
 
-  <body id="main-page"> 
+  <body id="main-page">
     <header class="header">
-          <h1 class="mainHeaderText">Zen Ten</h1>
-      </header>
-  
-      <section class="mainSection">
-          <p class="description">welcome, project usage description</p>
-          <h3 class="timeSelection">How long would you like to zen for?</h3>
-          <div class="control">
-            <input class="input is-hovered" type="text" placeholder="Time in Minutes"><i class="fa-solid fa-hourglass fa-2xl"></i>
-          </div>
-      </section>
-      
+      <h1 class="mainHeaderText">Zen Ten</h1>
+    </header>
+
+    <section class="mainSection">
+      <p class="description">
+        Welcome to your daily Zen Ten - a virtual place for you to take a break from your busy day.  Select how long you want to relax (we recommend ten minutes) in the box below. Then choose one of the five visual themes. Once you press start, you will be transported to your personalized Zen space. Enjoy!
+      </p>
+      <p id="timeError" class="timeSelection">
+        How long would you like to Zen?
+      </p>
+      <div class="control">
+        <input
+          id="timeInput"
+          class="input is-hovered"
+          type="number"
+          max="10"
+          min="0"
+          placeholder="Time in Minutes (1-10)"
+        />
+      </div>
+      <p class="pick">Select your Zen theme:</p>
+
+    </section>
+
     <!-- bulma buttons -->
-    <div class="field is-grouped is-grouped-multiline buttons are-medium">
+    <div
+      class="field is-grouped is-grouped-multiline buttons are-medium"
+      id="btnBox"
+    >
       <p class="control">
-        <a class="button is-primary is-outlined""> Stars <i class="fa-solid fa-star"></i></a>
+        <a class="button is-primary is-active" id="paramStars">
+          Stars <i class="fa-solid fa-star"></i
+        ></a>
       </p>
       <p class="control">
-        <a class="button is-link is-outlined"> Ocean <i class="fa-solid fa-water"></i> </a>
+        <a class="button is-link is-active" id="paramOcean">
+          Ocean <i class="fa-solid fa-water"></i>
+        </a>
       </p>
       <p class="control">
-        <a class="button is-success is-outlined"> Nature <i class="fa-solid fa-leaf"></i> </a>
+        <a class="button is-success is-active" id="paramNature">
+          Nature <i class="fa-solid fa-leaf"></i>
+        </a>
       </p>
       <p class="control">
-        <a class="button is-warning is-outlined"> Sunlight <i class="fa-solid fa-sun"></i> </a>
+        <a class="button is-warning is-active" id="paramSun">
+          Sunlight <i class="fa-solid fa-sun"></i>
+        </a>
       </p>
       <p class="control">
-        <a class="button is-dark is-outlined"> City <i class="fa-solid fa-city"></i></a>
+        <a class="button is-dark is-active" id="paramCity">
+          City <i class="fa-solid fa-city"></i
+        ></a>
       </p>
     </div>
     <div class="startBtnContainer buttons are-large">
-        <button class="button is-info is-outlined">Start</button>
+      <button class="button is-info is-active" id="startBtn">Start</button>
     </div>
 
     <!-- linked script -->
-    
-  
-    <script src="script.js"></script>
-</body>
 
+    <script src="script.js"></script>
+  </body>
 </html>
