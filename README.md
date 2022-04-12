@@ -30,6 +30,7 @@ Here at Zenten we want to make sure you don’t go crazy. It will only take thre
 ## Desktop
 
 ![Alt text](/Screen%20Shot%202022-04-11%20at%206.31.27%20PM.png "Homepage")
+
 ![Alt text](/Screen%20Shot%202022-04-11%20at%206.34.28%20PM.png "Zenspot")
 
 ## Mobile
